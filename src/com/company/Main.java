@@ -11,21 +11,21 @@ public class Main {
 	// write your code her
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        int number1;
-        int number2;
-        int result1;
-        int result2;
-        int result3;
+        double number1;
+        double number2;
+        double result1;
+        double result2;
+        double result3;
         double result4;
         double result5;
         //double teste1;
 
         System.out.println( "Put a number " );
-            number1 = Integer.parseInt(reader.readLine());
+            number1 = Double.parseDouble(reader.readLine());
                 System.out.println( "You put " + number1);
 
         System.out.println( "Put another number " );
-            number2 = Integer.parseInt(reader.readLine());
+            number2 = Double.parseDouble(reader.readLine());
                 System.out.println( "You put " + number2);
 
         result1 = number1 + number2;
