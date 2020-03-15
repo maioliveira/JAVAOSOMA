@@ -7,50 +7,72 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
-	// write your code her
+    public static void main(String[] args) throws IOException, InterruptedException {
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        double number1;
-        double number2;
-        double result1;
-        double result2;
-        double result3;
-        double result4;
-        double result5;
-        //double teste1;
+        double sumResult = 0;
+        double subtractionResult;
+        double multiplicationResult;
+        double divisionResult;
+        double restResult;
+        double number1RestResult;
+        double number2RestResult;
 
-        System.out.println( "Put a number " );
-            number1 = Double.parseDouble(reader.readLine());
-                System.out.println( "You put " + number1);
+        double[] arrayteste = new double[10];
+        int arraylength = arrayteste.length;
+        int contador = 0;
+        while (contador < arraylength) {
+            System.out.println( "Write a number " + (contador+1));
+            arrayteste[contador] = Double.parseDouble(reader.readLine());
+            System.out.println( "You put " + arrayteste[contador]);
+            sumResult = sumResult + arrayteste[contador];
 
-        System.out.println( "Put another number " );
-            number2 = Double.parseDouble(reader.readLine());
-                System.out.println( "You put " + number2);
+            contador = contador + 1;
+        }
+        int contador2 = 0;
+        System.out.print( "The result of " );
+        while (contador2 < arraylength) {
+            System.out.print(arrayteste[contador2] + " + " );
+            contador2 = contador2 + 1;
+            
+        }
+        System.out.print( "is " + sumResult);
+        number1RestResult = arrayteste[0] % 2;
+        number2RestResult = arrayteste[1] % 2;
 
-        result1 = number1 + number2;
-        System.out.println("The result of " + number1 + " + " + number2 + " is " + result1);
 
-        result2 = number1 - number2;
-        System.out.println("The result of " + number1 + " - " + number2 + " is " + result2);
 
-        result3 = number1 * number2;
-        System.out.println("The result of " + number1 + " x " + number2 + " is " + result3);
+        /*
+        subtractionResult = number1 - number2;
+        System.out.println("The result of " + number1 + " - " + number2 + " is " + subtractionResult);
 
-        result4 = number1 / number2;
-        System.out.println("The result of " + number1 + " ÷ " + number2 + " is " + result4);
+        multiplicationResult = number1 * number2;
+        System.out.println("The result of " + number1 + " x " + number2 + " is " + multiplicationResult);
 
-        result5 = number1 % number2;
-        System.out.println("The result of " + number1 + " % " + number2 + " is " + result5);
+        divisionResult = number1 / number2;
+        System.out.println("The result of " + number1 + " ÷ " + number2 + " is " + divisionResult);
 
-        //teste1 = 0.5;
+        restResult = number1 % number2;
+        System.out.println("The result of " + number1 + " % " + number2 + " is " + restResult);
 
-        //System.out.println(teste1);
+        if (number1 > number2) {
+            System.out.println("First number " + number1 + " is greater than second number " + number2);
+        } else if (number1 < number2) {
+            System.out.println("Second number " + number2 + " is greater than first number " + number1);
+        } else {
+            System.out.println("The first number is the same as the second.");
+        }
 
-        //System.out.println("The result of " + number1 + " + " + number2 + " is " + (number1 + number2));
-        //System.out.println("The result of " + number1 + " - " + number2 + " is " + (number1 - number2));
-        //System.out.println("The result of " + number1 + " x " + number2 + " is " + (number1 * number2));
-        //System.out.println("The result of " + number1 + " ÷ " + number2 + " is " + (number1 / number2));
-
+        if (number1RestResult == 0) {
+            System.out.println(number1 + " is even.");
+        } else {
+            System.out.println(number1 + " is odd.");
+        }
+        if (number2RestResult != 0) {
+            System.out.println(number2 + " is odd.");
+        } else {
+            System.out.println(number2 + " is even.");
+        }*/
     }
 }
