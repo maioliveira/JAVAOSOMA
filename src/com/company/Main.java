@@ -17,6 +17,7 @@ public class Main {
         int result2;
         int result3;
         int result4;
+        int result5;
 
         System.out.println( "Put a number " );
             number1 = Integer.parseInt(reader.readLine());
@@ -33,10 +34,13 @@ public class Main {
         System.out.println("The result of " + number1 + " - " + number2 + " is " + result2);
 
         result3 = number1 * number2;
-        System.out.println("The result of " + number1 + " ÷ " + number2 + " is " + result3);
+        System.out.println("The result of " + number1 + " x " + number2 + " is " + result3);
 
         result4 = number1 / number2;
-        System.out.println("The result of " + number1 + "  " + number2 + " is " + result4);
+        System.out.println("The result of " + number1 + " ÷ " + number2 + " is " + result4);
+
+        result5 = number1 % number2;
+        System.out.println("The result of " + number1 + " % " + number2 + " is " + result5);
 
         //System.out.println("The result of " + number1 + " + " + number2 + " is " + (number1 + number2));
         //System.out.println("The result of " + number1 + " - " + number2 + " is " + (number1 - number2));
