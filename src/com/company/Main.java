@@ -11,18 +11,18 @@ public class Main {
 	// write your code her
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+        int number1;
         int number2;
-        int number3;
 
         System.out.println( "Put a number " );
+            number1 = Integer.parseInt(reader.readLine());
+                System.out.println( "You put " + number1);
+
+        System.out.println( "Put another number " );
             number2 = Integer.parseInt(reader.readLine());
                 System.out.println( "You put " + number2);
 
-        System.out.println( "Put another number " );
-            number3 = Integer.parseInt(reader.readLine());
-                System.out.println( "You put " + number3);
-
-        System.out.println(number2 + number3);
+        System.out.println( "Your total is " + (number1 + number2));
 
     }
 }
