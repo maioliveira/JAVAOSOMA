@@ -22,8 +22,8 @@ public class Main {
             number2 = Integer.parseInt(reader.readLine());
                 System.out.println( "You put " + number2);
 
-        System.out.println( "Your count is " + number1 + " + " + number2);
-        System.out.println( "Your total is " + (number1 + number2));
+        System.out.println( "The result of " + number1 + " + " + number2 + " is " + (number1 + number2));
 
+        System.out.println("The result of " + number1 + " x " + number2 + " is " + (number1 * number2));
     }
 }
