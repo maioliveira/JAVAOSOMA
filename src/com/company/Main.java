@@ -13,6 +13,10 @@ public class Main {
 
         int number1;
         int number2;
+        int result1;
+        int result2;
+        int result3;
+        int result4;
 
         System.out.println( "Put a number " );
             number1 = Integer.parseInt(reader.readLine());
@@ -22,10 +26,22 @@ public class Main {
             number2 = Integer.parseInt(reader.readLine());
                 System.out.println( "You put " + number2);
 
-        System.out.println("The result of " + number1 + " + " + number2 + " is " + (number1 + number2));
-        System.out.println("The result of " + number1 + " - " + number2 + " is " + (number1 - number2));
-        System.out.println("The result of " + number1 + " x " + number2 + " is " + (number1 * number2));
-        System.out.println("The result of " + number1 + " ÷ " + number2 + " is " + (number1 / number2));
+        result1 = number1 + number2;
+        System.out.println("The result of " + number1 + " + " + number2 + " is " + result1);
+
+        result2 = number1 - number2;
+        System.out.println("The result of " + number1 + " - " + number2 + " is " + result2);
+
+        result3 = number1 * number2;
+        System.out.println("The result of " + number1 + " ÷ " + number2 + " is " + result3);
+
+        result4 = number1 / number2;
+        System.out.println("The result of " + number1 + "  " + number2 + " is " + result4);
+
+        //System.out.println("The result of " + number1 + " + " + number2 + " is " + (number1 + number2));
+        //System.out.println("The result of " + number1 + " - " + number2 + " is " + (number1 - number2));
+        //System.out.println("The result of " + number1 + " x " + number2 + " is " + (number1 * number2));
+        //System.out.println("The result of " + number1 + " ÷ " + number2 + " is " + (number1 / number2));
 
     }
 }
